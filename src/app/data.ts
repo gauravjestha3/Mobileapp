@@ -1,4 +1,5 @@
 export class Data {
+  [x: string]: any;
  Shoes = [
         {
             name: 'Puma',
@@ -38,7 +39,7 @@ export class Data {
             cost: 1500
         },
     
-    ];
+    ]
     Mobile = [
         {
             name: 'Nokia',
@@ -61,7 +62,7 @@ export class Data {
             cost: 5000
         }, 
 
-    ];
+    ]
     Games = [
         {
             name:'Fifa19',
@@ -80,26 +81,21 @@ export class Data {
             cost:15000
         },
         
-    ];
-    Sports = [
+    ]
+    Sports =[
         {
             name:'Football',
-            cost:2000
+            cost:10000
         },
         {
             name:'Cricket',
-            cost:1000
+            cost:2000
         },
         {
             name:'Hockey',
-            cost:1500
-
+            cost:3000
         },
-        {
-            name:'Basketball',
-            cost:700
-        }
-
-    ];
+    ]
+    
 }
 

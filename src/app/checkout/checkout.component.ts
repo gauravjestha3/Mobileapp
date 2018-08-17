@@ -5,8 +5,7 @@ import { FlipkartService } from '../flipkart.service';
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.css']
 })
-export class CheckoutComponent implements OnInit {
-  showItem;
+export class CheckoutComponent implements OnInit {showItem;
   total=0;
     constructor(private myservice :FlipkartService) { 
       this.showItem=myservice.Allitem;

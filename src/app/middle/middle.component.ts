@@ -9,6 +9,7 @@ import { FlipkartService } from '../flipkart.service';
 })
 export class MiddleComponent implements OnInit {
 showItem;
+showall=[this.data.FootballJersey,this.data.Games,this.data.Mobile,this.data.Shoes,this.data.Sports]
   constructor(private myservice:FlipkartService,private data:Data,private routes:Router) { 
     this.showItem=data.Shoes
   }
@@ -23,7 +24,7 @@ showItem;
 cart=[];
 add(item){
   this.cart.push(item);
- // console.log(this.cart)
+ console.log(this.cart)
  
 }
 checkout()
@@ -34,7 +35,7 @@ checkout()
     
   }
   else{
-    alert('Cart is Empty')
+    alert('please add to cart')
   }
 }
 

@@ -14,13 +14,14 @@ export class HeaderComponent implements OnInit {
   }
   
   openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "230px";
 }
 
  closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 show(option){
+  this.closeNav()
   if(option ==='Shoes'){
     this.service.getData(this.data.Shoes)
     
@@ -34,9 +35,9 @@ show(option){
   if(option ==='Games'){
     this.service.getData(this.data.Games)
   }
-  // if(option ==='Sports'){
-  //   this.service.getData(this.data.Sports)
-  // }
+  if(option ==='Sports'){
+    this.service.getData(this.data.Sports)
+  }
      
 }
 

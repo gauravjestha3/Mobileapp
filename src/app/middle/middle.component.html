@@ -21,6 +21,17 @@
     <div class="form-control">
       <button class="btn btn-default" (click)="checkout()">Check-Out</button>
     </div>
+    <div class="footer">
+        <table>
+        <tr *ngFor="let a of cart">
+          <span>
+            <b>Name :</b>{{a.name}}</span>
+          <span>&nbsp;&nbsp;&nbsp;
+            <b>Cost:</b>{{a.cost}}
+          </span>
+        </tr>
+        </table>
+      </div>
   </div>
 
 

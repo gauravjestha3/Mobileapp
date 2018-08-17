@@ -36,7 +36,10 @@
 }
 .btn-default{
     margin-left: 30%;
-    margin-top:90px;
+    margin-top:20px;
     color:black;
     background-color: lightblue
+}
+.footer{
+    overflow: auto
 }
