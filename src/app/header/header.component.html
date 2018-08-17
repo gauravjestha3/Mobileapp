@@ -1,0 +1,31 @@
+<h1> Shopping Cart</h1>
+
+<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; </span>
+ <div id="mySidenav" class="sidenav">
+   
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <!-- <a router-link="/food" routerLinkActive="active" (click)="foodclick()">Food</a> -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a (click)="show('Shoes')" class="nav-link">Shoes</a>
+        </li>
+        <li class="nav-item ">
+          <a (click)="show('Jersey')" class="nav-link">FootballJersey</a>
+        </li>
+        <li class="nav-item ">
+          <a (click)="show('Mobile')" class="nav-link">Mobile</a>
+        </li>
+        <li class="nav-item ">
+          <a (click)="show('Games')" class="nav-link">Games</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a (click)="show('Sports')" class="nav-link">Sports</a>
+          
+        </li> -->
+  
+      </ul>
+  
+  </div>
+
+      
